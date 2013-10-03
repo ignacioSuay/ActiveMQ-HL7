@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="5.491" errors="1" skipped="0" tests="1" name="ActiveMQTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/java/jdk1.6.0_27/jre/lib/amd64"/>
+    <property name="java.vm.version" value="20.2-b06"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/suay/otherDev/HL7IntegrationEngineer/ActiveMQHL7"/>
+    <property name="java.runtime.version" value="1.6.0_27-b07"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/java/jdk1.6.0_27/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/local/apache-maven-3.0.4//bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/jdk1.6.0_27/jre/lib/amd64/server:/usr/java/jdk1.6.0_27/jre/lib/amd64:/usr/java/jdk1.6.0_27/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.9.10-100.fc17.x86_64"/>
+    <property name="user.home" value="/home/suay"/>
+    <property name="user.timezone" value="Europe/Guernsey"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="suay"/>
+    <property name="java.class.path" value="/usr/local/apache-maven-3.0.4//boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/java/jdk1.6.0_27/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_27"/>
+    <property name="java.ext.dirs" value="/usr/java/jdk1.6.0_27/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/java/jdk1.6.0_27/jre/lib/resources.jar:/usr/java/jdk1.6.0_27/jre/lib/rt.jar:/usr/java/jdk1.6.0_27/jre/lib/sunrsasign.jar:/usr/java/jdk1.6.0_27/jre/lib/jsse.jar:/usr/java/jdk1.6.0_27/jre/lib/jce.jar:/usr/java/jdk1.6.0_27/jre/lib/charsets.jar:/usr/java/jdk1.6.0_27/jre/lib/modules/jdk.boot.jar:/usr/java/jdk1.6.0_27/jre/classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="maven.home" value="/usr/local/apache-maven-3.0.4"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="5.391" classname="ActiveMQTest" name="testSendToTcp">
+    <error message="Failed to create route route1 at: &gt;&gt;&gt; To[activemq:operations] &lt;&lt;&lt; in route: Route[[From[mina:tcp://localhost:8999?textline=true&amp;sync=fal... because of Failed to resolve endpoint: activemq://operations due to: No component found with scheme: activemq" type="org.apache.camel.FailedToCreateRouteException">org.apache.camel.FailedToCreateRouteException: Failed to create route route1 at: &gt;&gt;&gt; To[activemq:operations] &lt;&lt;&lt; in route: Route[[From[mina:tcp://localhost:8999?textline=true&amp;sync=fal... because of Failed to resolve endpoint: activemq://operations due to: No component found with scheme: activemq
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:879)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:172)
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:722)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:1789)
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:1575)
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:1444)
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:60)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:1412)
+	at org.apache.camel.test.junit4.CamelTestSupport.startCamelContext(CamelTestSupport.java:449)
+	at org.apache.camel.test.junit4.CamelTestSupport.doSetUp(CamelTestSupport.java:305)
+	at org.apache.camel.test.junit4.CamelTestSupport.setUp(CamelTestSupport.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.apache.camel.ResolveEndpointFailedException: Failed to resolve endpoint: activemq://operations due to: No component found with scheme: activemq
+	at org.apache.camel.impl.DefaultCamelContext.getEndpoint(DefaultCamelContext.java:485)
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:50)
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:187)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:108)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:114)
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:61)
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:55)
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:461)
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:179)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:876)
+	... 43 more
+</error>
+    <system-out>2013-09-30 13:19:10,914 [main           ] INFO  ActiveMQTest                   - ********************************************************************************
+2013-09-30 13:19:10,914 [main           ] INFO  ActiveMQTest                   - Testing: testSendToTcp(ActiveMQTest)
+2013-09-30 13:19:10,914 [main           ] INFO  ActiveMQTest                   - ********************************************************************************
+2013-09-30 13:19:16,183 [main           ] INFO  DefaultCamelContext            - Apache Camel 2.10.4 (CamelContext: camel-1) is starting
+2013-09-30 13:19:16,297 [main           ] INFO  DefaultCamelContext            - Apache Camel 2.10.4 (CamelContext: camel-1) is shutting down
+2013-09-30 13:19:16,301 [main           ] INFO  DefaultCamelContext            - Apache Camel 2.10.4 (CamelContext: camel-1) is shutdown in 0.001 seconds. Uptime 0.117 seconds.
+2013-09-30 13:19:16,301 [main           ] INFO  ActiveMQTest                   - ********************************************************************************
+2013-09-30 13:19:16,301 [main           ] INFO  ActiveMQTest                   - Testing done: testSendToTcp(ActiveMQTest)
+2013-09-30 13:19:16,301 [main           ] INFO  ActiveMQTest                   - Took: 5.389 seconds (5389 millis)
+2013-09-30 13:19:16,301 [main           ] INFO  ActiveMQTest                   - ********************************************************************************
+</system-out>
+  </testcase>
+</testsuite>
